@@ -1,21 +1,8 @@
 {
   "name": "iMusical",
-  "description": "A Discord bot coded in Discord.JS, hosted using Heroku.",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "discord.js": "11.1.0",
-    "request": "2.81.0"
-  }
-
-{
-  "name": "yumeko",
   "version": "0.1.0",
   "description": "A simple discord bot",
-  "main": "MusicBot.js",
+  "main": "index.js",
   "scripts": {
     "test": ""
   },
@@ -24,7 +11,7 @@
     "bot",
     "discordbot"
   ],
-  "author": "iCrawl",
+  "author": "RealSparky2000",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.1.0",
