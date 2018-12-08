@@ -1,17 +1,6 @@
-const { Client, Util } = require('discord.js');
-
-
-
-const YouTube = require('simple-youtube-api');
-
-const ytdl = require('ytdl-core');
+const { Client, Util } = require('discord.js') 
 
 const client = new Client({ disableEveryone: true });
-
-const youtube = new YouTube(GOOGLE_API_KEY);
-
-
-
 client.on('warn', console.warn);
 
 client.on('error', console.error);
@@ -23,3 +12,5 @@ client.on('disconnect', () => console.log('I just disconnected, making sure you 
 client.on('reconnecting', () => console.log('I am reconnecting now!'));
 
 client.on('message', async msg => { 
+}) 
+client.login(BOT.TOKEN)
