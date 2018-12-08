@@ -1,6 +1,7 @@
 const { Client, Util } = require('discord.js') 
 const YouTube = require('simple-youtube-api') 
 const ytdl = require('ytdl-core') 
+const prefix = "m?"
 
 const client = new Client({ disableEveryone: true });
 
@@ -54,6 +55,8 @@ client.on('message', async msg => {
 			return msg.channel.send('I cannot speak in this voice channel, make sure I have the proper permissions!');
 
 		}
+		
+		
    } 
 }) 
 client.login(process.env.BOT_TOKEN)
