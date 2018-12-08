@@ -13,4 +13,4 @@ client.on('reconnecting', () => console.log('I am reconnecting now!'));
 
 client.on('message', async msg => { 
 }) 
-client.login(BOT.TOKEN)
+client.login(BOTTOKEN)
