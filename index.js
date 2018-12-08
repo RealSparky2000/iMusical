@@ -1,6 +1,13 @@
 const { Client, Util } = require('discord.js') 
+const YouTube = require('simple-youtube-api') 
+const ytdl = require('ytdl-core') 
 
 const client = new Client({ disableEveryone: true });
+
+const youtube = new YouTube(process.env.GOOGLE_API_KEY);
+
+const queue = new Map();
+
 client.on('warn', console.warn);
 
 client.on('error', console.error);
