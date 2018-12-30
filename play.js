@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const ytdl = require("ytdl-core");
 const YouTube = require('simple-youtube-api') ;
-exports.run = async (client, message, args, ops) => {
+const youtube = new YouTube(ключ типо да);
+exports.run = async (client, message, args, ops, queue) => {
     var voiceChannel = message.member.voiceChannel;
 		if (!voiceChannel) return message.channel.send(':no_entry: `I\'m sorry but you need to be in a voice channel to play music!`');
 		var permissions = voiceChannel.permissionsFor(message.client.user);
